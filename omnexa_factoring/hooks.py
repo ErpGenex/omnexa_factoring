@@ -1,5 +1,5 @@
 app_name = "omnexa_factoring"
-app_title = "Omnexa Factoring"
+app_title = "ErpGenEx — Factoring"
 app_publisher = "Omnexa"
 app_description = "Factoring and discounting vertical"
 app_email = "dev@omnexa.com"
