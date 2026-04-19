@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "case_id",
+  "invoice_no",
+  "debtor_id",
+  "invoice_amount",
+  "invoice_due_date",
+  "invoice_status",
+  "funded_amount",
+  "collected_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "case_id",
+   "fieldtype": "Link",
+   "label": "Factoring Case",
+   "reqd": 1,
+   "in_list_view": 1,
+   "options": "Factoring Case"
+  },
+  {
+   "fieldname": "invoice_no",
+   "fieldtype": "Data",
+   "label": "Invoice No",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "debtor_id",
+   "fieldtype": "Data",
+   "label": "Debtor ID",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "invoice_amount",
+   "fieldtype": "Currency",
+   "label": "Invoice Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "invoice_due_date",
+   "fieldtype": "Date",
+   "label": "Due Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "invoice_status",
+   "fieldtype": "Select",
+   "label": "Invoice Status",
+   "in_list_view": 1,
+   "options": "REGISTERED\nVERIFIED\nFUNDED\nCOLLECTED\nDISPUTED\nWRITTEN_OFF",
+   "default": "REGISTERED"
+  },
+  {
+   "fieldname": "funded_amount",
+   "fieldtype": "Currency",
+   "label": "Funded Amount"
+  },
+  {
+   "fieldname": "collected_amount",
+   "fieldtype": "Currency",
+   "label": "Collected Amount"
+  }
+ ],
+ "module": "Omnexa Factoring",
+ "name": "Factoring Invoice",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "print": 1,
+   "email": 1,
+   "export": 1,
+   "report": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "invoice_id",
+  "event_type",
+  "event_status",
+  "event_amount",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "invoice_id",
+   "fieldtype": "Link",
+   "label": "Invoice",
+   "reqd": 1,
+   "in_list_view": 1,
+   "options": "Factoring Invoice"
+  },
+  {
+   "fieldname": "event_type",
+   "fieldtype": "Select",
+   "label": "Event Type",
+   "reqd": 1,
+   "in_list_view": 1,
+   "options": "REMINDER\nPROMISE_TO_PAY\nPAYMENT\nDISPUTE\nWRITE_OFF"
+  },
+  {
+   "fieldname": "event_status",
+   "fieldtype": "Select",
+   "label": "Event Status",
+   "in_list_view": 1,
+   "options": "OPEN\nCLOSED",
+   "default": "OPEN"
+  },
+  {
+   "fieldname": "event_amount",
+   "fieldtype": "Currency",
+   "label": "Event Amount"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "module": "Omnexa Factoring",
+ "name": "Factoring Collection Event",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "print": 1,
+   "email": 1,
+   "export": 1,
+   "report": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

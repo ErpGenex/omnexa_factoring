@@ -1,0 +1,8 @@
+{
+ "doctype": "Report",
+ "name": "Factoring Collections Tracker",
+ "module": "Omnexa Factoring",
+ "report_type": "Script Report",
+ "ref_doctype": "Factoring Collection Event",
+ "is_standard": "Yes"
+}

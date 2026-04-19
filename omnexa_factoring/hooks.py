@@ -247,3 +247,18 @@ before_request = ["omnexa_factoring.license_gate.before_request"]
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+
+after_migrate = [
+	"omnexa_factoring.governance_setup.after_migrate",
+	"omnexa_factoring.workspace_enhancer.after_migrate",
+]
+
+permission_query_conditions = {
+	"Factoring Policy Version": "omnexa_factoring.governance_permissions.policy_query_conditions",
+	"Factoring Audit Snapshot": "omnexa_factoring.governance_permissions.snapshot_query_conditions",
+}
+
+has_permission = {
+	"Factoring Policy Version": "omnexa_factoring.governance_permissions.policy_has_permission",
+	"Factoring Audit Snapshot": "omnexa_factoring.governance_permissions.snapshot_has_permission",
+}

@@ -1,0 +1,8 @@
+{
+ "doctype": "Report",
+ "name": "Factoring Invoice Lifecycle",
+ "module": "Omnexa Factoring",
+ "report_type": "Script Report",
+ "ref_doctype": "Factoring Invoice",
+ "is_standard": "Yes"
+}
