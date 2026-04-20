@@ -1,0 +1,41 @@
+{
+ "allow_roles": [
+  {
+   "role": "Desk User"
+  },
+  {
+   "role": "System Manager"
+  }
+ ],
+ "creation": "2026-04-20 00:31:40.851523",
+ "docstatus": 0,
+ "doctype": "Module Onboarding",
+ "documentation_url": "https://frappe.io/framework",
+ "idx": 0,
+ "is_complete": 0,
+ "modified": "2026-04-20 02:24:45.832317",
+ "modified_by": "Administrator",
+ "module": "Omnexa Factoring",
+ "name": "ERPGENEX \u2014 Factoring",
+ "owner": "Administrator",
+ "steps": [
+  {
+   "step": "ERPGENEX-WS-factoring-01-factoring_case"
+  },
+  {
+   "step": "ERPGENEX-WS-factoring-02-factoring_invoice"
+  },
+  {
+   "step": "ERPGENEX-WS-factoring-03-report-factoring_invoice_lifecycle"
+  },
+  {
+   "step": "ERPGENEX-WS-factoring-04-report-factoring_debtor_exposure_dashboard"
+  },
+  {
+   "step": "ERPGENEX-WS-factoring-home"
+  }
+ ],
+ "subtitle": "Guided setup for this workspace.",
+ "success_message": "You are ready to work in Factoring.",
+ "title": "ERPGENEX \u00b7 Factoring"
+}

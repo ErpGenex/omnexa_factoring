@@ -1,0 +1,23 @@
+{
+ "action": "View Report",
+ "action_label": "Open report",
+ "creation": "2026-04-20 00:31:40.837923",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2026-04-20 02:24:45.806114",
+ "modified_by": "Administrator",
+ "name": "ERPGENEX-WS-factoring-03-report-factoring_invoice_lifecycle",
+ "owner": "Administrator",
+ "reference_report": "Factoring Invoice Lifecycle",
+ "report_description": "Operational follow-up using **Factoring Invoice Lifecycle**.",
+ "report_reference_doctype": "Factoring Invoice",
+ "report_type": "Script Report",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "Open report Factoring Invoice Lifecycle",
+ "validate_action": 1
+}
