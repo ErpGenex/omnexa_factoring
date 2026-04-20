@@ -5,6 +5,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "identity_section",
   "case_id",
   "invoice_no",
   "debtor_id",
@@ -12,9 +13,16 @@
   "invoice_due_date",
   "invoice_status",
   "funded_amount",
-  "collected_amount"
+  "collected_amount",
+  "control_section",
+  "invoice_reference"
  ],
  "fields": [
+  {
+   "fieldname": "identity_section",
+   "fieldtype": "Section Break",
+   "label": "Invoice Identity"
+  },
   {
    "fieldname": "case_id",
    "fieldtype": "Link",
@@ -66,6 +74,16 @@
    "fieldname": "collected_amount",
    "fieldtype": "Currency",
    "label": "Collected Amount"
+  },
+  {
+   "fieldname": "control_section",
+   "fieldtype": "Section Break",
+   "label": "Control"
+  },
+  {
+   "fieldname": "invoice_reference",
+   "fieldtype": "Data",
+   "label": "Invoice Reference"
   }
  ],
  "module": "Omnexa Factoring",

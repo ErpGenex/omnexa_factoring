@@ -5,14 +5,22 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "identity_section",
   "debtor_id",
   "portfolio_id",
   "outstanding_amount",
   "overdue_amount",
   "concentration_ratio",
-  "risk_band"
+  "risk_band",
+  "control_section",
+  "exposure_owner"
  ],
  "fields": [
+  {
+   "fieldname": "identity_section",
+   "fieldtype": "Section Break",
+   "label": "Debtor Exposure Identity"
+  },
   {
    "fieldname": "debtor_id",
    "fieldtype": "Data",
@@ -48,6 +56,17 @@
    "in_list_view": 1,
    "options": "LOW\nMEDIUM\nHIGH",
    "default": "MEDIUM"
+  },
+  {
+   "fieldname": "control_section",
+   "fieldtype": "Section Break",
+   "label": "Control"
+  },
+  {
+   "fieldname": "exposure_owner",
+   "fieldtype": "Link",
+   "label": "Exposure Owner",
+   "options": "User"
   }
  ],
  "module": "Omnexa Factoring",

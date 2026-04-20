@@ -5,6 +5,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "identity_section",
   "customer_name",
   "portfolio_id",
   "principal",
@@ -23,9 +24,16 @@
   "funding_amount",
   "reserve_amount",
   "decision_reason_codes",
-  "required_controls"
+  "required_controls",
+  "control_section",
+  "case_owner"
  ],
  "fields": [
+  {
+   "fieldname": "identity_section",
+   "fieldtype": "Section Break",
+   "label": "Case Identity"
+  },
   {
    "fieldname": "customer_name",
    "fieldtype": "Data",
@@ -138,6 +146,17 @@
    "fieldname": "required_controls",
    "fieldtype": "Long Text",
    "label": "Required Controls"
+  },
+  {
+   "fieldname": "control_section",
+   "fieldtype": "Section Break",
+   "label": "Governance"
+  },
+  {
+   "fieldname": "case_owner",
+   "fieldtype": "Link",
+   "label": "Case Owner",
+   "options": "User"
   }
  ],
  "module": "Omnexa Factoring",

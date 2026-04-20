@@ -5,13 +5,21 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "identity_section",
   "invoice_id",
   "event_type",
   "event_status",
   "event_amount",
-  "notes"
+  "notes",
+  "control_section",
+  "event_reference"
  ],
  "fields": [
+  {
+   "fieldname": "identity_section",
+   "fieldtype": "Section Break",
+   "label": "Collection Event Identity"
+  },
   {
    "fieldname": "invoice_id",
    "fieldtype": "Link",
@@ -45,6 +53,16 @@
    "fieldname": "notes",
    "fieldtype": "Small Text",
    "label": "Notes"
+  },
+  {
+   "fieldname": "control_section",
+   "fieldtype": "Section Break",
+   "label": "Control"
+  },
+  {
+   "fieldname": "event_reference",
+   "fieldtype": "Data",
+   "label": "Event Reference"
   }
  ],
  "module": "Omnexa Factoring",
