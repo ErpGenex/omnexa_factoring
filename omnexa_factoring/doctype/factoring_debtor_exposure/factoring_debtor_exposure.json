@@ -1,91 +1,79 @@
 {
- "actions": [],
- "allow_rename": 1,
- "autoname": "hash",
- "doctype": "DocType",
- "engine": "InnoDB",
- "field_order": [
-  "identity_section",
-  "debtor_id",
-  "portfolio_id",
-  "outstanding_amount",
-  "overdue_amount",
-  "concentration_ratio",
-  "risk_band",
-  "control_section",
-  "exposure_owner"
- ],
- "fields": [
-  {
-   "fieldname": "identity_section",
-   "fieldtype": "Section Break",
-   "label": "Debtor Exposure Identity"
-  },
-  {
-   "fieldname": "debtor_id",
-   "fieldtype": "Data",
-   "label": "Debtor ID",
-   "reqd": 1,
-   "in_list_view": 1
-  },
-  {
-   "fieldname": "portfolio_id",
-   "fieldtype": "Data",
-   "label": "Portfolio",
-   "in_list_view": 1
-  },
-  {
-   "fieldname": "outstanding_amount",
-   "fieldtype": "Currency",
-   "label": "Outstanding Amount"
-  },
-  {
-   "fieldname": "overdue_amount",
-   "fieldtype": "Currency",
-   "label": "Overdue Amount"
-  },
-  {
-   "fieldname": "concentration_ratio",
-   "fieldtype": "Percent",
-   "label": "Concentration Ratio"
-  },
-  {
-   "fieldname": "risk_band",
-   "fieldtype": "Select",
-   "label": "Risk Band",
-   "in_list_view": 1,
-   "options": "LOW\nMEDIUM\nHIGH",
-   "default": "MEDIUM"
-  },
-  {
-   "fieldname": "control_section",
-   "fieldtype": "Section Break",
-   "label": "Control"
-  },
-  {
-   "fieldname": "exposure_owner",
-   "fieldtype": "Link",
-   "label": "Exposure Owner",
-   "options": "User"
-  }
- ],
- "module": "Omnexa Factoring",
- "name": "Factoring Debtor Exposure",
- "permissions": [
-  {
-   "role": "System Manager",
-   "read": 1,
-   "write": 1,
-   "create": 1,
-   "delete": 1,
-   "print": 1,
-   "email": 1,
-   "export": 1,
-   "report": 1,
-   "share": 1
-  }
- ],
- "sort_field": "modified",
- "sort_order": "DESC",
- "track_changes": 1
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "hash",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"debtor_id",
+		"portfolio_id",
+		"outstanding_amount",
+		"overdue_amount",
+		"concentration_ratio",
+		"risk_band",
+		"exposure_owner"
+	],
+	"fields": [
+		{
+			"fieldname": "debtor_id",
+			"fieldtype": "Data",
+			"label": "Debtor ID",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "portfolio_id",
+			"fieldtype": "Data",
+			"label": "Portfolio",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "outstanding_amount",
+			"fieldtype": "Currency",
+			"label": "Outstanding Amount"
+		},
+		{
+			"fieldname": "overdue_amount",
+			"fieldtype": "Currency",
+			"label": "Overdue Amount"
+		},
+		{
+			"fieldname": "concentration_ratio",
+			"fieldtype": "Percent",
+			"label": "Concentration Ratio"
+		},
+		{
+			"fieldname": "risk_band",
+			"fieldtype": "Select",
+			"label": "Risk Band",
+			"in_list_view": 1,
+			"options": "LOW\nMEDIUM\nHIGH",
+			"default": "MEDIUM"
+		},
+		{
+			"fieldname": "exposure_owner",
+			"fieldtype": "Link",
+			"label": "Exposure Owner",
+			"options": "User"
+		}
+	],
+	"module": "Omnexa Factoring",
+	"name": "Factoring Debtor Exposure",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"print": 1,
+			"email": 1,
+			"export": 1,
+			"report": 1,
+			"share": 1
+		}
+	],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"track_changes": 1
 }

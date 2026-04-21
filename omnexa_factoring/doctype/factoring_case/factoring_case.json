@@ -1,181 +1,179 @@
 {
- "actions": [],
- "allow_rename": 1,
- "autoname": "hash",
- "doctype": "DocType",
- "engine": "InnoDB",
- "field_order": [
-  "identity_section",
-  "customer_name",
-  "portfolio_id",
-  "principal",
-  "invoice_face_value",
-  "advance_rate",
-  "term_months",
-  "recourse_type",
-  "debtor_id",
-  "debtor_rating",
-  "debtor_concentration",
-  "credit_risk_pd",
-  "lifecycle_stage",
-  "ifrs9_stage",
-  "risk_score",
-  "pricing_spread",
-  "funding_amount",
-  "reserve_amount",
-  "decision_reason_codes",
-  "required_controls",
-  "control_section",
-  "case_owner"
- ],
- "fields": [
-  {
-   "fieldname": "identity_section",
-   "fieldtype": "Section Break",
-   "label": "Case Identity"
-  },
-  {
-   "fieldname": "customer_name",
-   "fieldtype": "Data",
-   "label": "Customer Name",
-   "reqd": 1,
-   "in_list_view": 1
-  },
-  {
-   "fieldname": "portfolio_id",
-   "fieldtype": "Data",
-   "label": "Portfolio",
-   "in_list_view": 1
-  },
-  {
-   "fieldname": "principal",
-   "fieldtype": "Currency",
-   "label": "Principal",
-   "reqd": 1
-  },
-  {
-   "fieldname": "invoice_face_value",
-   "fieldtype": "Currency",
-   "label": "Invoice Face Value",
-   "reqd": 1
-  },
-  {
-   "fieldname": "advance_rate",
-   "fieldtype": "Percent",
-   "label": "Advance Rate",
-   "in_list_view": 1
-  },
-  {
-   "fieldname": "term_months",
-   "fieldtype": "Int",
-   "label": "Term (Months)",
-   "reqd": 1
-  },
-  {
-   "fieldname": "recourse_type",
-   "fieldtype": "Select",
-   "label": "Recourse Type",
-   "reqd": 1,
-   "in_list_view": 1,
-   "options": "RECOURSE\nNON_RECOURSE",
-   "default": "RECOURSE"
-  },
-  {
-   "fieldname": "debtor_id",
-   "fieldtype": "Data",
-   "label": "Debtor ID",
-   "reqd": 1,
-   "in_list_view": 1
-  },
-  {
-   "fieldname": "debtor_rating",
-   "fieldtype": "Select",
-   "label": "Debtor Rating",
-   "options": "A\nB\nC\nD"
-  },
-  {
-   "fieldname": "debtor_concentration",
-   "fieldtype": "Percent",
-   "label": "Debtor Concentration"
-  },
-  {
-   "fieldname": "credit_risk_pd",
-   "fieldtype": "Percent",
-   "label": "Credit Risk PD"
-  },
-  {
-   "fieldname": "lifecycle_stage",
-   "fieldtype": "Select",
-   "label": "Lifecycle Stage",
-   "in_list_view": 1,
-   "options": "ORIGINATION\nAPPROVAL\nSERVICING\nWATCHLIST\nCOLLECTIONS\nSETTLED"
-  },
-  {
-   "fieldname": "ifrs9_stage",
-   "fieldtype": "Select",
-   "label": "IFRS9 Stage",
-   "in_list_view": 1,
-   "options": "STAGE_1\nSTAGE_2\nSTAGE_3"
-  },
-  {
-   "fieldname": "risk_score",
-   "fieldtype": "Float",
-   "label": "Risk Score"
-  },
-  {
-   "fieldname": "pricing_spread",
-   "fieldtype": "Percent",
-   "label": "Pricing Spread"
-  },
-  {
-   "fieldname": "funding_amount",
-   "fieldtype": "Currency",
-   "label": "Funding Amount"
-  },
-  {
-   "fieldname": "reserve_amount",
-   "fieldtype": "Currency",
-   "label": "Reserve Amount"
-  },
-  {
-   "fieldname": "decision_reason_codes",
-   "fieldtype": "Small Text",
-   "label": "Decision Reason Codes"
-  },
-  {
-   "fieldname": "required_controls",
-   "fieldtype": "Long Text",
-   "label": "Required Controls"
-  },
-  {
-   "fieldname": "control_section",
-   "fieldtype": "Section Break",
-   "label": "Governance"
-  },
-  {
-   "fieldname": "case_owner",
-   "fieldtype": "Link",
-   "label": "Case Owner",
-   "options": "User"
-  }
- ],
- "module": "Omnexa Factoring",
- "name": "Factoring Case",
- "permissions": [
-  {
-   "role": "System Manager",
-   "read": 1,
-   "write": 1,
-   "create": 1,
-   "delete": 1,
-   "print": 1,
-   "email": 1,
-   "export": 1,
-   "report": 1,
-   "share": 1
-  }
- ],
- "sort_field": "modified",
- "sort_order": "DESC",
- "track_changes": 1
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "hash",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"customer_name",
+		"portfolio_id",
+		"principal",
+		"invoice_face_value",
+		"advance_rate",
+		"term_months",
+		"column_break_omnexa_1",
+		"recourse_type",
+		"debtor_id",
+		"debtor_rating",
+		"debtor_concentration",
+		"credit_risk_pd",
+		"lifecycle_stage",
+		"column_break_omnexa_2",
+		"ifrs9_stage",
+		"risk_score",
+		"pricing_spread",
+		"funding_amount",
+		"reserve_amount",
+		"decision_reason_codes",
+		"required_controls",
+		"case_owner"
+	],
+	"fields": [
+		{
+			"fieldname": "customer_name",
+			"fieldtype": "Data",
+			"label": "Customer Name",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "portfolio_id",
+			"fieldtype": "Data",
+			"label": "Portfolio",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "principal",
+			"fieldtype": "Currency",
+			"label": "Principal",
+			"reqd": 1
+		},
+		{
+			"fieldname": "invoice_face_value",
+			"fieldtype": "Currency",
+			"label": "Invoice Face Value",
+			"reqd": 1
+		},
+		{
+			"fieldname": "advance_rate",
+			"fieldtype": "Percent",
+			"label": "Advance Rate",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "term_months",
+			"fieldtype": "Int",
+			"label": "Term (Months)",
+			"reqd": 1
+		},
+		{
+			"fieldname": "recourse_type",
+			"fieldtype": "Select",
+			"label": "Recourse Type",
+			"reqd": 1,
+			"in_list_view": 1,
+			"options": "RECOURSE\nNON_RECOURSE",
+			"default": "RECOURSE"
+		},
+		{
+			"fieldname": "debtor_id",
+			"fieldtype": "Data",
+			"label": "Debtor ID",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "debtor_rating",
+			"fieldtype": "Select",
+			"label": "Debtor Rating",
+			"options": "A\nB\nC\nD"
+		},
+		{
+			"fieldname": "debtor_concentration",
+			"fieldtype": "Percent",
+			"label": "Debtor Concentration"
+		},
+		{
+			"fieldname": "credit_risk_pd",
+			"fieldtype": "Percent",
+			"label": "Credit Risk PD"
+		},
+		{
+			"fieldname": "lifecycle_stage",
+			"fieldtype": "Select",
+			"label": "Lifecycle Stage",
+			"in_list_view": 1,
+			"options": "ORIGINATION\nAPPROVAL\nSERVICING\nWATCHLIST\nCOLLECTIONS\nSETTLED"
+		},
+		{
+			"fieldname": "ifrs9_stage",
+			"fieldtype": "Select",
+			"label": "IFRS9 Stage",
+			"in_list_view": 1,
+			"options": "STAGE_1\nSTAGE_2\nSTAGE_3"
+		},
+		{
+			"fieldname": "risk_score",
+			"fieldtype": "Float",
+			"label": "Risk Score"
+		},
+		{
+			"fieldname": "pricing_spread",
+			"fieldtype": "Percent",
+			"label": "Pricing Spread"
+		},
+		{
+			"fieldname": "funding_amount",
+			"fieldtype": "Currency",
+			"label": "Funding Amount"
+		},
+		{
+			"fieldname": "reserve_amount",
+			"fieldtype": "Currency",
+			"label": "Reserve Amount"
+		},
+		{
+			"fieldname": "decision_reason_codes",
+			"fieldtype": "Small Text",
+			"label": "Decision Reason Codes"
+		},
+		{
+			"fieldname": "required_controls",
+			"fieldtype": "Long Text",
+			"label": "Required Controls"
+		},
+		{
+			"fieldname": "case_owner",
+			"fieldtype": "Link",
+			"label": "Case Owner",
+			"options": "User"
+		},
+		{
+			"fieldname": "column_break_omnexa_1",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "column_break_omnexa_2",
+			"fieldtype": "Column Break"
+		}
+	],
+	"module": "Omnexa Factoring",
+	"name": "Factoring Case",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"print": 1,
+			"email": 1,
+			"export": 1,
+			"report": 1,
+			"share": 1
+		}
+	],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"track_changes": 1
 }
