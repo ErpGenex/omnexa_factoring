@@ -1,8 +1,8 @@
 app_name = "omnexa_factoring"
 app_title = "ErpGenEx — Factoring"
-app_publisher = "Omnexa"
+app_publisher = "ErpGenEx"
 app_description = "Factoring and discounting vertical"
-app_email = "dev@omnexa.com"
+app_email = "dev@erpgenex.com"
 app_license = "mit"
 
 # Apps
