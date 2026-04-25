@@ -1,0 +1,8 @@
+{
+ "doctype": "Report",
+ "name": "Factoring Settlement Reconciliation",
+ "module": "Omnexa Factoring",
+ "report_type": "Script Report",
+ "ref_doctype": "Factoring Settlement Run",
+ "is_standard": "Yes"
+}
