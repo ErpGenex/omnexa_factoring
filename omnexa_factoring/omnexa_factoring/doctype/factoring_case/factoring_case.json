@@ -5,6 +5,7 @@
 	"doctype": "DocType",
 	"engine": "InnoDB",
 	"field_order": [
+		"tab_break_overview",
 		"customer_name",
 		"portfolio_id",
 		"principal",
@@ -16,6 +17,7 @@
 		"debtor_id",
 		"debtor_rating",
 		"debtor_concentration",
+		"tab_break_details",
 		"credit_risk_pd",
 		"lifecycle_stage",
 		"column_break_omnexa_2",
@@ -29,6 +31,16 @@
 		"case_owner"
 	],
 	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "tab_break_details",
+			"fieldtype": "Tab Break",
+			"label": "Details"
+		},
 		{
 			"fieldname": "customer_name",
 			"fieldtype": "Data",
