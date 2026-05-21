@@ -4,5 +4,15 @@
  "module": "Omnexa Factoring",
  "report_type": "Script Report",
  "ref_doctype": "Factoring Debtor Exposure",
- "is_standard": "Yes"
+ "is_standard": "Yes",
+ "filters": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1,
+   "width": "180px"
+  }
+ ]
 }
