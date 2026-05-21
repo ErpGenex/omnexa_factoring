@@ -24,10 +24,10 @@ def execute(filters=None):
 	)
 
 	return [
-		{"label":"Debtor","fieldname":"debtor_id","fieldtype":"Data","width":140},
-		{"label":"Portfolio","fieldname":"portfolio_id","fieldtype":"Data","width":130},
-		{"label":"Outstanding","fieldname":"outstanding_amount","fieldtype":"Currency","width":140},
-		{"label":"Overdue","fieldname":"overdue_amount","fieldtype":"Currency","width":130},
-		{"label":"Concentration","fieldname":"concentration_ratio","fieldtype":"Percent","width":120},
-		{"label":"Risk","fieldname":"risk_band","fieldtype":"Data","width":100},
+		{"label":_("Debtor"),"fieldname":"debtor_id","fieldtype":"Data","width":140},
+		{"label":_("Portfolio"),"fieldname":"portfolio_id","fieldtype":"Data","width":130},
+		{"label":_("Outstanding"),"fieldname":"outstanding_amount","fieldtype":"Currency","width":140},
+		{"label":_("Overdue"),"fieldname":"overdue_amount","fieldtype":"Currency","width":130},
+		{"label":_("Concentration"),"fieldname":"concentration_ratio","fieldtype":"Percent","width":120},
+		{"label":_("Risk"),"fieldname":"risk_band","fieldtype":"Data","width":100},
 	], data

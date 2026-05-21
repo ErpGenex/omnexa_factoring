@@ -24,9 +24,9 @@ def execute(filters=None):
 	)
 
 	return [
-		{"label":"Invoice","fieldname":"invoice_no","fieldtype":"Data","width":140},
-		{"label":"Case","fieldname":"case_id","fieldtype":"Link","options":"Factoring Case","width":180},
-		{"label":"Debtor","fieldname":"debtor_id","fieldtype":"Data","width":130},
-		{"label":"Amount","fieldname":"invoice_amount","fieldtype":"Currency","width":130},
-		{"label":"Status","fieldname":"invoice_status","fieldtype":"Data","width":120},
+		{"label":_("Invoice"),"fieldname":"invoice_no","fieldtype":"Data","width":140},
+		{"label":_("Case"),"fieldname":"case_id","fieldtype":"Link","options":"Factoring Case","width":180},
+		{"label":_("Debtor"),"fieldname":"debtor_id","fieldtype":"Data","width":130},
+		{"label":_("Amount"),"fieldname":"invoice_amount","fieldtype":"Currency","width":130},
+		{"label":_("Status"),"fieldname":"invoice_status","fieldtype":"Data","width":120},
 	], data

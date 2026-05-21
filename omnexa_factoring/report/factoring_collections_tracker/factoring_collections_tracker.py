@@ -24,9 +24,9 @@ def execute(filters=None):
 	)
 
 	return [
-		{"label":"Event","fieldname":"name","fieldtype":"Link","options":"Factoring Collection Event","width":160},
-		{"label":"Invoice","fieldname":"invoice_id","fieldtype":"Link","options":"Factoring Invoice","width":180},
-		{"label":"Type","fieldname":"event_type","fieldtype":"Data","width":120},
-		{"label":"Status","fieldname":"event_status","fieldtype":"Data","width":110},
-		{"label":"Amount","fieldname":"event_amount","fieldtype":"Currency","width":130},
+		{"label":_("Event"),"fieldname":"name","fieldtype":"Link","options":"Factoring Collection Event","width":160},
+		{"label":_("Invoice"),"fieldname":"invoice_id","fieldtype":"Link","options":"Factoring Invoice","width":180},
+		{"label":_("Type"),"fieldname":"event_type","fieldtype":"Data","width":120},
+		{"label":_("Status"),"fieldname":"event_status","fieldtype":"Data","width":110},
+		{"label":_("Amount"),"fieldname":"event_amount","fieldtype":"Currency","width":130},
 	], data
