@@ -1,0 +1,2 @@
+[post_model_sync]
+omnexa_factoring.patches.v1_0.sync_fc_workspace_full
