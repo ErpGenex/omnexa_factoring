@@ -10,16 +10,16 @@ app_license = "mit"
 
 required_apps = ["omnexa_core"]
 
-# Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "omnexa_factoring",
-# 		"logo": "/assets/omnexa_factoring/logo.png",
-# 		"title": "Omnexa Factoring",
-# 		"route": "/omnexa_factoring",
-# 		"has_permission": "omnexa_factoring.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": "omnexa_factoring",
+		"logo": "/assets/omnexa_factoring/logo.png",
+		"title": "FactorFlow",
+		"route": "/app/factoring",
+		"has_permission": "omnexa_core.omnexa_core.finance_demo.finance_app_permission.has_app_permission",
+	}
+]
+
 
 # Includes in <head>
 # ------------------
