@@ -15,7 +15,7 @@ add_to_apps_screen = [
 		"name": "omnexa_factoring",
 		"logo": "/assets/omnexa_factoring/logo.png",
 		"title": "FactorFlow",
-		"route": "/app/factoring",
+		"route": "/app/fc-servicing-portal",
 		"has_permission": "omnexa_core.omnexa_core.finance_demo.finance_app_permission.has_app_permission",
 	}
 ]
