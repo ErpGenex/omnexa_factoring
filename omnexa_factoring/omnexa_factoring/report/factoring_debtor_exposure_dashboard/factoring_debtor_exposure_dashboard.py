@@ -10,6 +10,7 @@ from omnexa_core.omnexa_core.report_print.report_query_filters import (
 	prepare_filters,
 	sql_conditions,
 )
+from omnexa_core.omnexa_core.utils.report_charts import grouped_sum_chart
 
 
 
@@ -23,11 +24,13 @@ def execute(filters=None):
 		limit_page_length=5000,
 	)
 
-	return [
-		{"label":_("Debtor"),"fieldname":"debtor_id","fieldtype":"Data","width":140},
-		{"label":_("Portfolio"),"fieldname":"portfolio_id","fieldtype":"Data","width":130},
-		{"label":_("Outstanding"),"fieldname":"outstanding_amount","fieldtype":"Currency","width":140},
-		{"label":_("Overdue"),"fieldname":"overdue_amount","fieldtype":"Currency","width":130},
-		{"label":_("Concentration"),"fieldname":"concentration_ratio","fieldtype":"Percent","width":120},
-		{"label":_("Risk"),"fieldname":"risk_band","fieldtype":"Data","width":100},
-	], data
+	columns = [
+		{"label": _("Debtor"), "fieldname": "debtor_id", "fieldtype": "Data", "width": 140},
+		{"label": _("Portfolio"), "fieldname": "portfolio_id", "fieldtype": "Data", "width": 130},
+		{"label": _("Outstanding"), "fieldname": "outstanding_amount", "fieldtype": "Currency", "width": 140},
+		{"label": _("Overdue"), "fieldname": "overdue_amount", "fieldtype": "Currency", "width": 130},
+		{"label": _("Concentration"), "fieldname": "concentration_ratio", "fieldtype": "Percent", "width": 120},
+		{"label": _("Risk"), "fieldname": "risk_band", "fieldtype": "Data", "width": 100},
+	]
+	chart = grouped_sum_chart(data, group_field="risk_band", value_field="outstanding_amount", title="Outstanding by Risk Band")
+	return columns, data, None, chart
