@@ -13,6 +13,13 @@ from omnexa_factoring.api import (
 
 
 class TestFactoringLifecycleApi(FrappeTestCase):
+	@classmethod
+	def setUpClass(cls):
+		super().setUpClass()
+		from omnexa_core.tests.test_helpers import suppress_workflow_attach_print
+
+		suppress_workflow_attach_print()
+
 	def test_evaluate_lifecycle_api(self):
 		out = evaluate_lifecycle(principal="100000", term_months=6, invoice_face_value="130000", debtor_concentration="0.20")
 		self.assertIn("risk_score", out)
